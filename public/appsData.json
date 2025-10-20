@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://example.com/app1.png",
+    "image": "https://i.ibb.co.com/Jj2m6fjN/Task-Follow.jpg",
     "title": "TaskFlow",
     "companyName": "FlowSoft Inc.",
     "id": 1,
@@ -8,7 +8,7 @@
     "size": 24800,
     "reviews": 1254,
     "ratingAvg": 4.5,
-    "downloads": 500000,
+    "downloads": "5M",
     "ratings": [
       { "name": "1 star", "count": 52 },
       { "name": "2 star", "count": 71 },
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://example.com/app2.png",
+    "image": "https://i.ibb.co.com/QvLvKfS5/fitTrack.png",
     "title": "FitTrack Pro",
     "companyName": "HealthyTech",
     "id": 2,
@@ -26,7 +26,7 @@
     "size": 30500,
     "reviews": 842,
     "ratingAvg": 4.2,
-    "downloads": 300000,
+    "downloads": "20M",
     "ratings": [
       { "name": "1 star", "count": 30 },
       { "name": "2 star", "count": 40 },
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://example.com/app3.png",
+    "image": "https://i.ibb.co.com/nqXmxnfv/note-Nest-logo.jpg",
     "title": "NoteNest",
     "companyName": "BrightPixel",
     "id": 3,
@@ -44,7 +44,7 @@
     "size": 17600,
     "reviews": 2300,
     "ratingAvg": 4.8,
-    "downloads": 1000000,
+    "downloads": "100M",
     "ratings": [
       { "name": "1 star", "count": 30 },
       { "name": "2 star", "count": 44 },
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://example.com/app4.png",
+    "image": "https://i.ibb.co.com/PsSBBXF3/Budget-Bee.jpg",
     "title": "BudgetBee",
     "companyName": "Finly Apps",
     "id": 4,
@@ -62,7 +62,7 @@
     "size": 22200,
     "reviews": 670,
     "ratingAvg": 4.0,
-    "downloads": 150000,
+    "downloads": "15M",
     "ratings": [
       { "name": "1 star", "count": 55 },
       { "name": "2 star", "count": 78 },
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://example.com/app5.png",
+    "image": "https://i.ibb.co.com/RkWZfNqn/MindEase.jpg",
     "title": "MindEase",
     "companyName": "Zenware",
     "id": 5,
@@ -80,7 +80,7 @@
     "size": 29000,
     "reviews": 940,
     "ratingAvg": 4.6,
-    "downloads": 400000,
+    "downloads": "40M",
     "ratings": [
       { "name": "1 star", "count": 40 },
       { "name": "2 star", "count": 39 },
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://example.com/app6.png",
+    "image": "https://i.ibb.co.com/272Cw3v3/quick-Scan.png",
     "title": "QuickScan",
     "companyName": "DocuFast",
     "id": 6,
@@ -98,7 +98,7 @@
     "size": 19000,
     "reviews": 1350,
     "ratingAvg": 4.7,
-    "downloads": 600000,
+    "downloads": "60M",
     "ratings": [
       { "name": "1 star", "count": 34 },
       { "name": "2 star", "count": 50 },
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://example.com/app7.png",
+    "image": "https://i.ibb.co.com/0prDLQVF/travel-Mate.png",
     "title": "TravelMate",
     "companyName": "GlobeTrek",
     "id": 7,
@@ -116,7 +116,7 @@
     "size": 27500,
     "reviews": 1980,
     "ratingAvg": 4.4,
-    "downloads": 850000,
+    "downloads": "85M",
     "ratings": [
       { "name": "1 star", "count": 80 },
       { "name": "2 star", "count": 95 },
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://example.com/app8.png",
+    "image": "https://i.ibb.co.com/9kD9vsCH/learn-loop.jpg",
     "title": "LearnLoop",
     "companyName": "EduCraft",
     "id": 8,
@@ -134,7 +134,7 @@
     "size": 33000,
     "reviews": 3120,
     "ratingAvg": 4.9,
-    "downloads": 1200000,
+    "downloads": "120M",
     "ratings": [
       { "name": "1 star", "count": 20 },
       { "name": "2 star", "count": 30 },
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "https://example.com/app9.png",
+    "image": "https://i.ibb.co.com/jvXND0Pz/Crypto-Track.png",
     "title": "CryptoTrack",
     "companyName": "BlockWave",
     "id": 9,
@@ -152,7 +152,7 @@
     "size": 21000,
     "reviews": 1580,
     "ratingAvg": 3.8,
-    "downloads": 700000,
+    "downloads": "70M",
     "ratings": [
       { "name": "1 star", "count": 150 },
       { "name": "2 star", "count": 200 },
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "https://example.com/app10.png",
+    "image": "https://i.ibb.co.com/9mQFZhYC/photo-Fixer.jpg",
     "title": "PhotoFixer",
     "companyName": "PixelPerfect",
     "id": 10,
@@ -170,7 +170,7 @@
     "size": 24500,
     "reviews": 1090,
     "ratingAvg": 4.3,
-    "downloads": 550000,
+    "downloads": "55M",
     "ratings": [
       { "name": "1 star", "count": 45 },
       { "name": "2 star", "count": 55 },
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://example.com/app11.png",
+    "image": "https://i.ibb.co.com/QF9mmNm3/shop-Smart.jpg",
     "title": "ShopSmart",
     "companyName": "DealHunt Inc.",
     "id": 11,
@@ -188,7 +188,7 @@
     "size": 23000,
     "reviews": 890,
     "ratingAvg": 4.1,
-    "downloads": 340000,
+    "downloads": "34M",
     "ratings": [
       { "name": "1 star", "count": 60 },
       { "name": "2 star", "count": 70 },
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "https://example.com/app12.png",
+    "image": "https://i.ibb.co.com/Df2bqQ8z/Sleep-Cycle.jpg",
     "title": "SleepCycle+",
     "companyName": "DreamWare",
     "id": 12,
@@ -206,7 +206,7 @@
     "size": 26500,
     "reviews": 1430,
     "ratingAvg": 4.6,
-    "downloads": 620000,
+    "downloads": "560M",
     "ratings": [
       { "name": "1 star", "count": 74 },
       { "name": "2 star", "count": 87 },

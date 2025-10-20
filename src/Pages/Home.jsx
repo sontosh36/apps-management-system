@@ -1,11 +1,17 @@
 import React from 'react';
 import { IoDownloadOutline, IoLogoGooglePlaystore } from 'react-icons/io5';
 import { LuStar } from 'react-icons/lu';
+import AppCart from '../Components/AppCart';
+import useApps from '../CustomHook/useApps';
+import { Link } from 'react-router';
 
 const Home = () => {
+    const {apps} = useApps();
+    // console.log(appData);
+    const featureApp = apps.slice(0, 8);
     return (
         <div className='bg-gray-300'>
-            <div className=' w-11/12 mx-auto py-7'>
+            <div className=' w-11/12 mx-auto pt-7'>
                 <div className='text-center '>
                     <h2 className='text-3xl font-bold mb-3'>We Build <br /> <span className='text-purple-500'> Productive </span>
                     Apps
@@ -14,24 +20,24 @@ const Home = () => {
 
                    <div className='mx-auto flex items-center justify-center text-center gap-4 mt-3'>
                         <button className='btn border-none rounded-lg bg-white shadow-sm'>
-                            <img src="/google-play.jpg" alt='Google Play' className='w-5 h-5' />
+                            <img src="https://i.ibb.co.com/yc128XMJ/google-play.jpg" alt='Google Play' className='w-5 h-5' />
                              Google Play</button>
                         <button className='btn border-none rounded-lg bg-white shadow-sm'> 
-                            <img src="/app-store.jpg" alt='app store' className='w-5 h-5' />
+                            <img src="https://i.ibb.co.com/YTDdQCTF/app-store.jpg" alt='app store' className='w-5 h-5' />
                             App Store</button>
 
                    </div>
                    <div className='mt-5 max-w-2xl mx-auto flex justify-center'>
-                         <img src="/hero.png" alt="hero image" className='w-full h-full' />
+                         <img src="https://i.ibb.co.com/SwSwyqVt/hero.png" alt="hero image" className='w-full h-full' />
                    </div>
                 
                 </div>
             </div>
-            <div className='bg-gradient-to-r from-blue-600 to-pink-300 p-10'>
-                <div className="w-11/12 flex flex-col">
+            <div className='bg-gradient-to-r from-indigo-500 via-indigo-500 to-pink-300 p-10'>
+                <div className="w-11/12 mx-auto">
                     <h2 className='text-white text-2xl font-bold text-center mb-4'>Trusted By Millions, Bulit For You</h2>
-                    <div className='flex justify-around gap-4 text-white'>
-                        <div>
+                    <div className='grid grid-cols-1 md:grid-cols-3 gap-4 text-white'>
+                        <div className=''>
                             <p>Total Downloads</p>
                             <h4 className='text-white text-3xl my-2 flex gap-10 items-center font-extrabold'>
                                 29.6M
@@ -59,7 +65,14 @@ const Home = () => {
 
             <div className='w-11/12 mx-auto py-8 text-center'>
                 <h2 className='font-bold mb-2 text-3xl'>Tranding Apps</h2>
-                <p className='text-gray-600'>Explore All Tranding Apps on the Market developed by us</p>
+                <p className='text-gray-600 mb-4'>Explore All Tranding Apps on the Market developed by us</p>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-5'>
+                    {
+                        featureApp.map(data => <AppCart key={data.id} data={data}></AppCart>)
+                    }
+                </div>
+
+                <Link to="/apps" className=' bg-gradient-to-r from-indigo-500 via-indigo-500 to-pink-300 px-4 py-2 rounded-lg text-white hover:scale-110'>Show All</Link>
             </div>
         </div>
     );

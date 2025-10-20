@@ -26,7 +26,7 @@ const Navbar = () => {
                     </NavLink>
                 </ul>
                 <Link className="flex items-center gap-3 h-[30px] ml-3" to="/">
-                    <img className='w-full h-full' src="/logo.png" alt="logo" />
+                    <img className='w-full h-full' src="https://i.ibb.co.com/M57N1rPK/logo.png" alt="logo" />
                     <h2 className='text-xl font-bold text-blue-600'>APPS.IO</h2>
                 </Link>
             </span>
@@ -41,7 +41,7 @@ const Navbar = () => {
                      <MdInstallDesktop/> Installation
                 </NavLink>
             </ul>
-            <a href='https://github.com/sontosh36' className='btn outline-none rounded-lg border-none text-white flex gap-2 bg-gradient-to-r from-blue-600 to-purple-400'>
+            <a href='https://github.com/sontosh36' className='btn outline-none rounded-lg border-none text-white flex gap-2 bg-gradient-to-r from-indigo-500 via-indigo-500 to-purple-400'>
                <span><FaGithub/> </span> Contribute </a>
             
         </nav>
