@@ -16,13 +16,13 @@ const Navbar = () => {
                     <Menu className='md:hidden'></Menu>
                 }
                 <ul className={`md:hidden bg-purple-400 flex flex-col gap-2 p-4  text-white rounded-lg absolute duration-1000 ${open? 'top-13' : '-top-30'}`}>
-                    <NavLink to='/' className="flex items-center gap-2">
+                    <NavLink to='/' className="text-gray-500 flex items-center gap-2">
                      <IoHomeOutline/> Home
                      </NavLink>
-                    <NavLink to='/apps' className="flex items-center gap-2">
+                    <NavLink to='/apps' className="text-gray-500 flex items-center gap-2">
                      <FaAppStore/> Apps
                      </NavLink>
-                    <NavLink to='/installation' className="flex items-center gap-2"> <MdInstallDesktop/> Installation
+                    <NavLink to='/installation' className="text-gray-500 flex items-center gap-2"> <MdInstallDesktop/> Installation
                     </NavLink>
                 </ul>
                 <Link className="flex items-center gap-3 h-[30px] ml-3" to="/">
@@ -31,13 +31,13 @@ const Navbar = () => {
                 </Link>
             </span>
             <ul className='md:flex gap-5 hidden'>
-                <NavLink to="/" className="flex items-center gap-2">
+                <NavLink to="/" className="text-gray-500 flex items-center gap-2">
                     <IoHomeOutline/> Home
                 </NavLink>
-                <NavLink to='/apps' className="flex items-center gap-2"> 
+                <NavLink to='/apps' className="text-gray-500 flex items-center gap-2"> 
                     <FaAppStore/> Apps
                 </NavLink>
-                <NavLink to='/installation' className="flex items-center gap-2">
+                <NavLink to='/installation' className="text-gray-500 flex items-center gap-2">
                      <MdInstallDesktop/> Installation
                 </NavLink>
             </ul>

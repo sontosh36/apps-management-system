@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useApps from '../CustomHook/useApps';
 import AppCart from '../Components/AppCart';
 
 const Apps = () => {
     const {apps} = useApps();
+    const [search, setSearch] = useState('');
+
+     const trimWord = search.trim().toLocaleLowerCase();
+
+     const searchApps = trimWord ? apps.filter(app => app.title.toLocaleLowerCase().includes(trimWord)) : apps;
     return (
         <div className='bg-gray-300'>
             <div className='w-11/12 mx-auto py-8 text-center'>
@@ -12,19 +17,19 @@ const Apps = () => {
                     <p className='text-gray-600 mb-4'>Explore All Apps on the Market developed by us. we code for Millions.</p>
                 </div>
 
-                <div className='flex justify-between mb-3'>
+                <div className='flex flex-col md:flex-row justify-between mb-3 '>
                     <div>
-                        <h2 className='font-bold mb-2 text-3xl'>Our All Apps</h2>
+                        <h2 className='font-bold mb-2 text-3xl'><span className='text-md'>({searchApps.length})</span> Apps Found </h2>
                     </div>
                     <div>
-                        <label>
-                            <input className='bg-white text-black p-2 rounded-lg border-none' type="search" placeholder='search Apps' />
+                        <label className='input'>
+                            <input value={search} onChange={(e) => setSearch(e.target.value)} className='bg-white text-black p-2 rounded-md border-none' type="search" placeholder='Search Apps' />
                         </label>
                     </div>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                     {
-                        apps.map(data => <AppCart key={data.id} data={data}></AppCart>)
+                        searchApps.map(data => <AppCart key={data.id} data={data}></AppCart>)
                     }
                 </div>
             </div>
