@@ -15,7 +15,6 @@ const Installation = () => {
         localStorage.setItem('installedApps', JSON.stringify(updated));
         setApps(updated);
         toast.warning(`${apps.title} App Uninstall Successful!`);
-        console.log(apps)
     }
     const handleSorting = (type) => {
         sortSetOrder(type);

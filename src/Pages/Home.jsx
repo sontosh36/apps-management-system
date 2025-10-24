@@ -4,9 +4,10 @@ import { LuStar } from 'react-icons/lu';
 import AppCart from '../Components/AppCart';
 import useApps from '../CustomHook/useApps';
 import { Link } from 'react-router';
+import Spinner from '../Components/Spinner';
 
 const Home = () => {
-    const {apps} = useApps();
+    const {apps, loading} = useApps();
     // console.log(appData);
     const featureApp = apps.slice(0, 8);
     return (
@@ -66,11 +67,17 @@ const Home = () => {
             <div className='w-11/12 mx-auto py-8 text-center'>
                 <h2 className='font-bold mb-2 text-3xl'>Tranding Apps</h2>
                 <p className='text-gray-600 mb-4'>Explore All Tranding Apps on the Market developed by us</p>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-5'>
+
+                {
+                    loading ? (
+                        <Spinner/>
+                    ) : <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-5'>
                     {
                         featureApp.map(data => <AppCart key={data.id} data={data}></AppCart>)
                     }
                 </div>
+                }
+                
 
                 <Link to="/apps" className=' bg-gradient-to-r from-indigo-500 via-indigo-500 to-pink-300 px-4 py-2 rounded-lg text-white hover:scale-110'>Show All</Link>
             </div>

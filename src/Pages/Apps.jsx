@@ -3,9 +3,10 @@ import useApps from '../CustomHook/useApps';
 import AppCart from '../Components/AppCart';
 import { BiSolidError } from 'react-icons/bi';
 import { Link } from 'react-router';
+import Spinner from '../Components/Spinner';
 
 const Apps = () => {
-    const {apps} = useApps();
+    const {apps, loading} = useApps();
     const [search, setSearch] = useState('');
 
      const trimWord = search.trim().toLocaleLowerCase();
@@ -25,13 +26,16 @@ const Apps = () => {
                     </div>
                     <div>
                         <label className='input'>
-                            <input value={search} onChange={(e) => setSearch(e.target.value)} className='bg-white text-black p-2 rounded-md border-none' type="search" placeholder='Search Apps' />
+                            <input value={search} onChange={(e) => setSearch(e.target.value)} className='bg-white text-black p-2 rounded-md border-none' type="search" placeholder='Search Apps' /> 
                         </label>
                     </div>
                 </div>
                 {
-                    searchApps.length > 0 ? (
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                   loading ? (
+                    <Spinner count={12}/>
+                   ) : (
+                     searchApps.length > 0 ? (
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                     {
                         searchApps.map(data => <AppCart key={data.id} data={data}></AppCart>)
                     }
@@ -41,7 +45,7 @@ const Apps = () => {
                     <p className='text-3xl text-gray-800 font-bold'>App Not Found</p>
                     <Link to='/apps' className='bg-indigo-900 text-md font-bold px-3 py-3 rounded-md text-white'>Show All Apps</Link>
                 </div>
-                }
+                )}
             </div>
         </div>
     );
