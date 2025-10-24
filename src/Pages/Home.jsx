@@ -19,12 +19,12 @@ const Home = () => {
                     <p className='text-gray-700'>At <span className='text-blue-950 italic font-bold text-lg'>APPS.IO </span> , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make on impact.</p>
 
                    <div className='mx-auto flex items-center justify-center text-center gap-4 mt-3'>
-                        <button className='btn border-none rounded-lg bg-white shadow-sm'>
+                        <Link to='https://play.google.com' className='btn border-none rounded-lg bg-white shadow-sm'>
                             <img src="https://i.ibb.co.com/yc128XMJ/google-play.jpg" alt='Google Play' className='w-5 h-5' />
-                             Google Play</button>
-                        <button className='btn border-none rounded-lg bg-white shadow-sm'> 
+                             Google Play</Link>
+                        <Link to='https://apple.com/app-store' className='btn border-none rounded-lg bg-white shadow-sm'> 
                             <img src="https://i.ibb.co.com/YTDdQCTF/app-store.jpg" alt='app store' className='w-5 h-5' />
-                            App Store</button>
+                            App Store</Link>
 
                    </div>
                    <div className='mt-5 max-w-2xl mx-auto flex justify-center'>

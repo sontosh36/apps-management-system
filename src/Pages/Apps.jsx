@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import useApps from '../CustomHook/useApps';
 import AppCart from '../Components/AppCart';
+import { BiSolidError } from 'react-icons/bi';
+import { Link } from 'react-router';
 
 const Apps = () => {
     const {apps} = useApps();
@@ -27,11 +29,19 @@ const Apps = () => {
                         </label>
                     </div>
                 </div>
+                {
+                    searchApps.length > 0 ? (
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                     {
                         searchApps.map(data => <AppCart key={data.id} data={data}></AppCart>)
                     }
                 </div>
+                ) : <div className='flex flex-col justify-center items-center space-y-4'>
+                    <BiSolidError className='text-red-600 ' size={50}/>
+                    <p className='text-3xl text-gray-800 font-bold'>App Not Found</p>
+                    <Link to='/apps' className='bg-indigo-900 text-md font-bold px-3 py-3 rounded-md text-white'>Show All Apps</Link>
+                </div>
+                }
             </div>
         </div>
     );

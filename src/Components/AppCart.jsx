@@ -12,13 +12,13 @@ const AppCart = ({data}) => {
                 <img className='rounded-lg mb-3' src={image} alt="" />
                 <h3 className='font-semibold mb-2'>{title}</h3>
                     <div className='flex justify-between '>
-                        <div className='bg-gray-400 px-2 text-green-800 rounded-lg'>
+                        <div className='bg-gray-300 px-2 text-green-800 rounded-lg'>
                             <p className='flex items-center gap-1'>
                                 <FaDownload/>
                                 {downloads}
                             </p>
                         </div>
-                        <div className='bg-gray-400 text-indigo-900 px-2 rounded-lg'>
+                        <div className='bg-gray-300 text-indigo-900 px-2 rounded-lg'>
                             <p className='flex items-center gap-1'>
                                 <FaStar/>
                                 {ratingAvg}
