@@ -43,7 +43,7 @@ const Installation = () => {
                     
                     <label className='form-control btn border-none outline rounded-md'>
                          <select className='select select-bordered' value={sortOrder} onChange={(e) => handleSorting(e.target.value)}>
-                            <option className='text-xs text-center' value='none'>sort by Download</option>
+                            <option className='text-xs text-center' value='none'>Sort by Download</option>
                             <option className='text-xs text-center' value='acd-down'>Low-&gt;High</option>
                             <option className='text-xs text-center' value='dcd-down'>High-&gt;Low</option>
                         </select>
